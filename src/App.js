@@ -36,6 +36,7 @@ function App(){
                       PreAnalysis
                   </Navbar.Brand>
                   <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                  <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
                       <Nav.Link href="#home">Home</Nav.Link>
                       <Nav.Link href="">Data</Nav.Link>
@@ -71,7 +72,7 @@ function App(){
                         </Offcanvas.Body>
                       </Offcanvas>
                   </Nav>
-
+                  </Navbar.Collapse>
               </Container>
               </Navbar>
           </header>
