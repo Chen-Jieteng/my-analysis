@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'; //no longer supported in React18, should use creatRoot instead 
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
