@@ -36,34 +36,23 @@ function Home(){
                           <Card.Body>This is some text within a card body</Card.Body>
                       </Card>
                   </Row>
-                  <Row xs={1} md={2} className="g-4">
-                  <Col sm={5}>
-                  <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="https://i.pinimg.com/736x/63/22/56/632256734284bf55c3de0e535b35d657.jpg" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                <Row xs={1} md={2} className="g-4">
+                {Array.from({ length: 4 }).map((_, idx) => (
+                    <Col>
+                    <Card>
+                        <Card.Img variant="top" src="holder.js/100px160" />
+                        <Card.Body>
+                        <Card.Title>Card title</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
+                            This is a longer card with supporting text below as a natural
+                            lead-in to additional content. This content is a little bit
+                            longer.
                         </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
+                        </Card.Body>
                     </Card>
                     </Col>
-                    <Col sm={5}>
-                  <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                    </Card>
-                    </Col>
-                  </Row>
+                ))}
+                </Row>
               </Container>
           </main>
       </div>

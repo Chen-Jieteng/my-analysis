@@ -3,7 +3,7 @@ import React from 'react';
 function Maps(){
     return(
         <div>
-            <h1>Welcome to graph</h1>
+            <h1>Welcome to maps</h1>
         </div>
     );
 }
